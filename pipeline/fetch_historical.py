@@ -1,0 +1,37 @@
+# 90-day historical
+
+# %%
+import pandas as pd
+from datetime import datetime, timedelta
+from config import CITY_CONFIG
+from fetch_energy import fetch_energy_data
+from fetch_weather import fetch_weather_data
+from transform import merge_weather_and_energy
+from save import save_data 
+from loggerInfo import get_logger
+
+# %%
+
+logger = get_logger("fetch_historical")
+
+def fetch_90_day_history():
+    today = datetime.now().date()
+    end_date = today - timedelta(days=30)     # Avoid requesting today's data
+    start_date = end_date - timedelta(days=90)
+    all_data = []
+    
+    for city, codes in CITY_CONFIG.items():
+        logger.info(f"Fetching data for {city}...")
+        weather_df = fetch_weather_data(city, codes["station"], start_date.isoformat(), end_date.isoformat())
+        energy_df = fetch_energy_data(codes["eia"], start_date, end_date)
+        merged_df = merge_weather_and_energy(weather_df, energy_df)
+        all_data.append(merged_df)
+        
+    final_df = pd.concat(all_data, ignore_index=True)
+    save_data(final_df, historical=True)
+    
+if __name__ == "__main__":
+    fetch_90_day_history()
+
+
+# %%

@@ -1,0 +1,24 @@
+# Core
+requests
+pandas
+python-dotenv
+
+# Scheduling (optional for local testing)
+schedule
+
+# Logging and monitoring
+loguru
+
+# Data validation & quality
+numpy
+matplotlib
+seaborn
+scikit-learn
+
+# For dashboard/reporting
+streamlit
+
+# Testing
+pytest
+
+setuptools
