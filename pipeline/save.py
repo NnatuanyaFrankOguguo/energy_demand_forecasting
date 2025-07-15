@@ -4,6 +4,7 @@
 import os
 from datetime import datetime
 from loggerInfo import get_logger
+import pandas as pd
 
 # %%
 
@@ -24,3 +25,23 @@ def save_data(df, historical=False):
     df.to_csv(path, index=False)
     logger.info("Data saved successfully.")
 # %%
+
+# ===========================
+# Save Raw API Response
+# ===========================
+
+def save_raw_data(df: pd.DataFrame, city: str, source: str, start_date: str, end_date: str):
+    """
+    Save raw API data (weather or energy) into /data/raw as CSV.
+    - source: "weather" or "energy"
+    """
+    if df.empty:
+        logger.warning(f"No raw {source} data to save for {city}.")
+        return
+
+    os.makedirs("data/raw", exist_ok=True)
+    filename = f"{city}_{source}_{start_date}_to_{end_date}.csv"
+    path = os.path.join("data/raw", filename)
+
+    df.to_csv(path, index=False)
+    logger.info(f"Raw {source} data saved for {city} at {path}.")

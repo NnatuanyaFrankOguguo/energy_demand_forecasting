@@ -12,7 +12,7 @@ logger = get_logger("fetch_energy")
 
 # %%
 
-def fetch_energy_data(eia_station_id, start_date, end_date):
+def fetch_energy_data(eia_station_id, start_date, end_date, city):
     energy_base_url = "https://api.eia.gov/v2/electricity/rto/daily-region-data/data/"
     
     params = {
@@ -50,11 +50,13 @@ def fetch_energy_data(eia_station_id, start_date, end_date):
         # Rename the 'value' field to 'daily_consumption' and "period" to "date"
         df = df.rename(columns={"value": "energy_consumption", "period": "date"})
         
-        df["city"] = eia_station_id
+        df["reg_id"] = eia_station_id
+        
+        df["city"] = city
         
         logger.info(f"Successfully fetched energy data for {eia_station_id} from {start_date} to {end_date}.")
         
-        return df[["date", "city", "energy_consumption"]]
+        return df[["date", "city", "reg_id", "energy_consumption"]]
         
        
         
@@ -62,20 +64,20 @@ def fetch_energy_data(eia_station_id, start_date, end_date):
         logger.error(f"Error fetching energy data for {eia_station_id} from {start_date} to {end_date}: {e}")
         return pd.DataFrame()
 # %%
-if __name__ == "__main__":
-    from datetime import datetime, timedelta
+# if __name__ == "__main__":
+#     from datetime import datetime, timedelta
 
-    # Example parameters
-    eia_station_id = "NYIS"  # New York Independent System Operator
-    end_date = datetime.now().date() - timedelta(days=30)
-    start_date = end_date - timedelta(days=30)
+#     # Example parameters
+#     eia_station_id = "NYIS"  # New York Independent System Operator
+#     end_date = datetime.now().date() - timedelta(days=30)
+#     start_date = end_date - timedelta(days=30)
 
-    start_date_str = start_date.isoformat()
-    end_date_str = end_date.isoformat()
+#     start_date_str = start_date.isoformat()
+#     end_date_str = end_date.isoformat()
 
-    df = fetch_energy_data(eia_station_id, start_date_str, end_date_str)
+#     df = fetch_energy_data(eia_station_id, start_date_str, end_date_str)
 
-    if not df.empty:
-        print(df.head())
-    else:
-        print("No data returned.")
+#     if not df.empty:
+#         print(df.head())
+#     else:
+#         print("No data returned.")
