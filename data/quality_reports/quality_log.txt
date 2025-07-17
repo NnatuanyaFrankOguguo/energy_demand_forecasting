@@ -1,0 +1,14 @@
+
+=== Quality Check Run on 2025-07-17 00:56:53 ===
+[Missing Values]
+      missing_count  missing_percent
+TMIN            100         7.692308
+[Temp Outliers] 840 rows
+
+=== Quality Check Run on 2025-07-17 01:05:15 ===
+[Missing Values]
+      missing_count  missing_percent
+TMIN             80         7.692308
+[Temp Outliers] 720 rows
+[Negative Energy] 155 rows
+[Data Freshness] Stale

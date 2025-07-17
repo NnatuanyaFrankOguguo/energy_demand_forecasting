@@ -25,4 +25,4 @@ def check_energy_outliers(df: pd.DataFrame) -> pd.DataFrame:
     Returns rows where consumption is below 0.
     """
     logger.info("Checking for energy outliers...")
-    return df[df['consumption'] < 0]  # Negative usage doesn't make sense
+    return df[df['energy_consumption'] < 0]  # Negative usage doesn't make sense

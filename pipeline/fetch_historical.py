@@ -1,4 +1,7 @@
 # 90-day historical
+import sys
+
+sys.path.insert(0, "C:/energy_demand_forecasting/quality")
 
 # %%
 import pandas as pd
@@ -9,16 +12,20 @@ from fetch_weather import fetch_weather_data
 from transform import merge_weather_and_energy
 from save import save_data, save_raw_data
 from loggerInfo import get_logger
-from quality.quality_dashboard import run_quality_checks
+from quality_dashboard import run_quality_checks
 
 # %%
 
 logger = get_logger("fetch_historical")
 
 def fetch_90_day_history():
-    today = datetime.now().date()
-    end_date = today - timedelta(days=30)     # Avoid requesting today's data
+    # today = datetime.now().date()
+    # end_date = today - timedelta(days=30)     # Avoid requesting today's data
+    # start_date = end_date - timedelta(days=90)
+    
+    end_date = datetime.now().date() - timedelta(days=2) # Avoid requesting today's data but 2 days ago
     start_date = end_date - timedelta(days=90)
+    
     all_data = []
     
     for city, codes in CITY_CONFIG.items():
