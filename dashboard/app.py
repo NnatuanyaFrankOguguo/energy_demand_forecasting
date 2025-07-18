@@ -8,6 +8,7 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
+from loggerInfo import get_logger
 from datetime import datetime, timedelta
 from quality.check_missing import check_missing_values
 from quality.check_outliers import check_temperature_outliers, check_energy_outliers
@@ -16,7 +17,7 @@ from sklearn.linear_model import LinearRegression
 import numpy as np
 
 
-
+logger = get_logger("dashboard")
 
 # Load historical data
 @st.cache_data(ttl=3600)
