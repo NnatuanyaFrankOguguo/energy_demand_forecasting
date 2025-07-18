@@ -12,3 +12,11 @@ TMIN             80         7.692308
 [Temp Outliers] 720 rows
 [Negative Energy] 155 rows
 [Data Freshness] Stale
+
+=== Quality Check Run on 2025-07-18 10:27:49 ===
+[Missing Values]
+      missing_count  missing_percent
+TMIN            100         7.692308
+[Temp Outliers] 1260 rows
+[Negative Energy] 255 rows
+[Data Freshness] Stale

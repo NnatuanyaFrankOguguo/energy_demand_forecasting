@@ -1,0 +1,125 @@
+2025-07-18 10:27:19,088 | INFO | config | Loading environment variables...
+2025-07-18 10:27:19,089 | INFO | config | Environment variables loaded.
+2025-07-18 10:27:19,089 | INFO | config | City config loaded.
+2025-07-18 10:27:19,604 | INFO | fetch_historical | Fetching data for New York...
+2025-07-18 10:27:21,894 | INFO | fetch_weather | Successfully fetched weather data for New York from 2025-04-17 to 2025-07-16.
+2025-07-18 10:27:21,895 | INFO | fetch_weather | Response status code: <Response [200]>
+2025-07-18 10:27:33,265 | INFO | fetch_energy | Successfully fetched energy data for NYIS from 2025-04-17 to 2025-07-16.
+2025-07-18 10:27:33,265 | INFO | fetch_energy | Response status code: <Response [200]>
+2025-07-18 10:27:33,278 | INFO | fetch_energy | Successfully fetched energy data for NYIS from 2025-04-17 to 2025-07-16.
+2025-07-18 10:27:33,291 | INFO | transform | Merged dataset contains 260 rows.
+2025-07-18 10:27:33,296 | INFO | save | Raw weather data saved for New York at data/raw\New York_weather_2025-04-17_to_2025-07-16.csv.
+2025-07-18 10:27:33,303 | INFO | save | Raw energy data saved for New York at data/raw\New York_energy_2025-04-17_to_2025-07-16.csv.
+2025-07-18 10:27:33,303 | INFO | fetch_historical | Fetching data for Chicago...
+2025-07-18 10:27:34,498 | INFO | fetch_weather | Successfully fetched weather data for Chicago from 2025-04-17 to 2025-07-16.
+2025-07-18 10:27:34,498 | INFO | fetch_weather | Response status code: <Response [200]>
+2025-07-18 10:27:37,683 | INFO | fetch_energy | Successfully fetched energy data for PJM from 2025-04-17 to 2025-07-16.
+2025-07-18 10:27:37,683 | INFO | fetch_energy | Response status code: <Response [200]>
+2025-07-18 10:27:37,691 | INFO | fetch_energy | Successfully fetched energy data for PJM from 2025-04-17 to 2025-07-16.
+2025-07-18 10:27:37,695 | INFO | transform | Merged dataset contains 260 rows.
+2025-07-18 10:27:37,697 | INFO | save | Raw weather data saved for Chicago at data/raw\Chicago_weather_2025-04-17_to_2025-07-16.csv.
+2025-07-18 10:27:37,703 | INFO | save | Raw energy data saved for Chicago at data/raw\Chicago_energy_2025-04-17_to_2025-07-16.csv.
+2025-07-18 10:27:37,703 | INFO | fetch_historical | Fetching data for Houston...
+2025-07-18 10:27:38,761 | INFO | fetch_weather | Successfully fetched weather data for Houston from 2025-04-17 to 2025-07-16.
+2025-07-18 10:27:38,762 | INFO | fetch_weather | Response status code: <Response [200]>
+2025-07-18 10:27:41,647 | INFO | fetch_energy | Successfully fetched energy data for ERCO from 2025-04-17 to 2025-07-16.
+2025-07-18 10:27:41,648 | INFO | fetch_energy | Response status code: <Response [200]>
+2025-07-18 10:27:41,660 | INFO | fetch_energy | Successfully fetched energy data for ERCO from 2025-04-17 to 2025-07-16.
+2025-07-18 10:27:41,664 | INFO | transform | Merged dataset contains 260 rows.
+2025-07-18 10:27:41,666 | INFO | save | Raw weather data saved for Houston at data/raw\Houston_weather_2025-04-17_to_2025-07-16.csv.
+2025-07-18 10:27:41,672 | INFO | save | Raw energy data saved for Houston at data/raw\Houston_energy_2025-04-17_to_2025-07-16.csv.
+2025-07-18 10:27:41,673 | INFO | fetch_historical | Fetching data for Phoenix...
+2025-07-18 10:27:42,698 | INFO | fetch_weather | Successfully fetched weather data for Phoenix from 2025-04-17 to 2025-07-16.
+2025-07-18 10:27:42,699 | INFO | fetch_weather | Response status code: <Response [200]>
+2025-07-18 10:27:45,519 | INFO | fetch_energy | Successfully fetched energy data for AZPS from 2025-04-17 to 2025-07-16.
+2025-07-18 10:27:45,520 | INFO | fetch_energy | Response status code: <Response [200]>
+2025-07-18 10:27:45,528 | INFO | fetch_energy | Successfully fetched energy data for AZPS from 2025-04-17 to 2025-07-16.
+2025-07-18 10:27:45,532 | INFO | transform | Merged dataset contains 260 rows.
+2025-07-18 10:27:45,534 | INFO | save | Raw weather data saved for Phoenix at data/raw\Phoenix_weather_2025-04-17_to_2025-07-16.csv.
+2025-07-18 10:27:45,545 | INFO | save | Raw energy data saved for Phoenix at data/raw\Phoenix_energy_2025-04-17_to_2025-07-16.csv.
+2025-07-18 10:27:45,546 | INFO | fetch_historical | Fetching data for Seattle...
+2025-07-18 10:27:46,644 | INFO | fetch_weather | Successfully fetched weather data for Seattle from 2025-04-17 to 2025-07-16.
+2025-07-18 10:27:46,644 | INFO | fetch_weather | Response status code: <Response [200]>
+2025-07-18 10:27:49,202 | INFO | fetch_energy | Successfully fetched energy data for SCL from 2025-04-17 to 2025-07-16.
+2025-07-18 10:27:49,203 | INFO | fetch_energy | Response status code: <Response [200]>
+2025-07-18 10:27:49,211 | INFO | fetch_energy | Successfully fetched energy data for SCL from 2025-04-17 to 2025-07-16.
+2025-07-18 10:27:49,216 | INFO | transform | Merged dataset contains 260 rows.
+2025-07-18 10:27:49,218 | INFO | save | Raw weather data saved for Seattle at data/raw\Seattle_weather_2025-04-17_to_2025-07-16.csv.
+2025-07-18 10:27:49,229 | INFO | save | Raw energy data saved for Seattle at data/raw\Seattle_energy_2025-04-17_to_2025-07-16.csv.
+2025-07-18 10:27:49,232 | INFO | quality_dashboard |  Running Data Quality Checks...
+2025-07-18 10:27:49,233 | INFO | check_missing | Checking for missing values...
+2025-07-18 10:27:49,244 | INFO | check_missing | Missing values checked.           date      city   TMAX  TMIN reg_id  energy_consumption
+0    2025-04-17  New York  178.0  56.0   NYIS            345024.0
+1    2025-04-17  New York  178.0  56.0   NYIS            346226.0
+2    2025-04-17  New York  178.0  56.0   NYIS            346878.0
+3    2025-04-17  New York  178.0  56.0   NYIS            345612.0
+4    2025-04-17  New York  178.0  56.0   NYIS            345024.0
+...         ...       ...    ...   ...    ...                 ...
+1295 2025-04-29   Seattle  150.0   NaN    SCL            -10453.0
+1296 2025-04-29   Seattle  150.0   NaN    SCL            -10555.0
+1297 2025-04-29   Seattle  150.0   NaN    SCL            -10555.0
+1298 2025-04-29   Seattle  150.0   NaN    SCL            -10463.0
+1299 2025-04-29   Seattle  150.0   NaN    SCL            -10453.0
+
+[1300 rows x 6 columns]
+2025-07-18 10:27:49,248 | INFO | check_missing | Missing values summary created.                    missing_count  missing_percent
+date                            0         0.000000
+city                            0         0.000000
+TMAX                            0         0.000000
+TMIN                          100         7.692308
+reg_id                          0         0.000000
+energy_consumption              0         0.000000
+2025-07-18 10:27:49,251 | INFO | quality_dashboard | Missing Values Found:
+2025-07-18 10:27:49,251 | INFO | quality_dashboard |       missing_count  missing_percent
+TMIN            100         7.692308
+2025-07-18 10:27:49,257 | INFO | check_outliers | Checking for temperature outliers...
+2025-07-18 10:27:49,259 | INFO | check_outliers | Temperature outliers checked.0       True
+1       True
+2       True
+3       True
+4       True
+        ... 
+1295    True
+1296    True
+1297    True
+1298    True
+1299    True
+Length: 1300, dtype: bool
+2025-07-18 10:27:49,260 | INFO | quality_dashboard | Temperature Outliers Found: 1260 rows
+2025-07-18 10:27:49,260 | INFO | quality_dashboard |            date      city   TMAX  TMIN reg_id  energy_consumption
+0    2025-04-17  New York  178.0  56.0   NYIS            345024.0
+1    2025-04-17  New York  178.0  56.0   NYIS            346226.0
+2    2025-04-17  New York  178.0  56.0   NYIS            346878.0
+3    2025-04-17  New York  178.0  56.0   NYIS            345612.0
+4    2025-04-17  New York  178.0  56.0   NYIS            345024.0
+...         ...       ...    ...   ...    ...                 ...
+1295 2025-04-29   Seattle  150.0   NaN    SCL            -10453.0
+1296 2025-04-29   Seattle  150.0   NaN    SCL            -10555.0
+1297 2025-04-29   Seattle  150.0   NaN    SCL            -10555.0
+1298 2025-04-29   Seattle  150.0   NaN    SCL            -10463.0
+1299 2025-04-29   Seattle  150.0   NaN    SCL            -10453.0
+
+[1260 rows x 6 columns]
+2025-07-18 10:27:49,275 | INFO | check_outliers | Checking for energy outliers...
+2025-07-18 10:27:49,277 | INFO | quality_dashboard | Negative Energy Values Found: 255 rows
+2025-07-18 10:27:49,277 | INFO | quality_dashboard |            date      city   TMAX  TMIN reg_id  energy_consumption
+15   2025-04-17  New York  178.0  56.0   NYIS            -41619.0
+16   2025-04-17  New York  178.0  56.0   NYIS            -39661.0
+17   2025-04-17  New York  178.0  56.0   NYIS            -38964.0
+18   2025-04-17  New York  178.0  56.0   NYIS            -40748.0
+19   2025-04-17  New York  178.0  56.0   NYIS            -41619.0
+...         ...       ...    ...   ...    ...                 ...
+1295 2025-04-29   Seattle  150.0   NaN    SCL            -10453.0
+1296 2025-04-29   Seattle  150.0   NaN    SCL            -10555.0
+1297 2025-04-29   Seattle  150.0   NaN    SCL            -10555.0
+1298 2025-04-29   Seattle  150.0   NaN    SCL            -10463.0
+1299 2025-04-29   Seattle  150.0   NaN    SCL            -10453.0
+
+[255 rows x 6 columns]
+2025-07-18 10:27:49,291 | INFO | check_freshness | Checking data freshness...
+2025-07-18 10:27:49,296 | INFO | check_freshness | Data freshness checked. Most recent data is 80 days old.
+2025-07-18 10:27:49,297 | INFO | quality_dashboard |  Data is stale. Please refresh the data.
+2025-07-18 10:27:49,297 | INFO | quality_dashboard |  Quality Checks Completed.
+2025-07-18 10:27:49,298 | INFO | save | Saving data...
+2025-07-18 10:27:49,305 | INFO | save | Data saved successfully.
+2025-07-18 10:36:18,009 | INFO | dashboard | Loaded historical data from historical_data_2025-07-18_10-27-49.csv.
