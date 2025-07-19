@@ -1,9 +1,12 @@
+import sys
+import os
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 # %%
 import requests 
 import pandas as pd
 from config import EIA_API_KEY
-from loggerInfo import get_logger
+from common.loggerInfo import get_logger
 
 
 logger = get_logger("fetch_energy")

@@ -1,10 +1,10 @@
 
 import sys
 import os
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
-sys.path.insert(0, "C:/energy_demand_forecasting")
 # Ensure the loggerInfo module is accessible
-from ..loggerInfo import get_logger
+from common.loggerInfo import get_logger
 import streamlit as st
 import pandas as pd
 import plotly.express as px

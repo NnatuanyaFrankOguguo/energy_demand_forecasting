@@ -1,18 +1,18 @@
 # 90-day historical
 import sys
-
-sys.path.insert(0, "C:/energy_demand_forecasting/quality")
+import os
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 # %%
 import pandas as pd
 from datetime import datetime, timedelta
-from config import CITY_CONFIG
+from pipeline.config import CITY_CONFIG
 from fetch_energy import fetch_energy_data
 from fetch_weather import fetch_weather_data
 from transform import merge_weather_and_energy
 from save import save_data, save_raw_data
-from loggerInfo import get_logger
-from quality_dashboard import run_quality_checks
+from common.loggerInfo import get_logger
+from quality.quality_dashboard import run_quality_checks
 
 # %%
 

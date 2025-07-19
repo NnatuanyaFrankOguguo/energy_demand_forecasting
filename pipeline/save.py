@@ -1,9 +1,13 @@
 # writes to CSV
 
 # %%
+import sys
+import os
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
 import os
 from datetime import datetime
-from loggerInfo import get_logger
+from common.loggerInfo import get_logger
 import pandas as pd
 
 # %%

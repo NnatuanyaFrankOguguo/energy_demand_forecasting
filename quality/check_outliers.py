@@ -1,5 +1,9 @@
+import sys
+import os
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
 import pandas as pd
-from loggerInfo import get_logger
+from common.loggerInfo import get_logger
 
 logger = get_logger("check_outliers")
 

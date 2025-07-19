@@ -1,12 +1,14 @@
-
+import sys
+import os
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 
 import pandas as pd
-from check_missing import check_missing_values
-from check_outliers import check_temperature_outliers, check_energy_outliers
-from check_freshness import check_data_freshness
-from loggerInfo import get_logger
-import os
+from quality.check_missing import check_missing_values
+from quality.check_outliers import check_temperature_outliers, check_energy_outliers
+from quality.check_freshness import check_data_freshness
+from common.loggerInfo import get_logger
+
 from datetime import datetime
 
 
