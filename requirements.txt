@@ -15,6 +15,7 @@ matplotlib
 seaborn
 scikit-learn
 plotly
+statsmodels
 
 # For dashboard/reporting
 streamlit
