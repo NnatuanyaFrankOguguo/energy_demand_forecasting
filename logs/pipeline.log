@@ -3528,3 +3528,44 @@ Length: 1300, dtype: bool
 2025-07-18 22:55:12,996 | INFO | check_outliers | Checking for energy outliers...
 2025-07-18 22:55:12,999 | INFO | check_freshness | Checking data freshness...
 2025-07-18 22:55:13,007 | INFO | check_freshness | Data freshness checked. Most recent data is 80 days old.
+2025-07-19 10:11:58,860 | INFO | dashboard | Loaded historical data from historical_data_2025-07-18_10-27-49.csv.
+2025-07-19 10:11:58,881 | INFO | check_missing | Checking for missing values...
+2025-07-19 10:11:58,898 | INFO | check_missing | Missing values checked.           date      city   TMAX  TMIN reg_id  energy_consumption  avg_temp day_of_week
+0    2025-04-17  New York  178.0  56.0   NYIS            345024.0     117.0    Thursday
+1    2025-04-17  New York  178.0  56.0   NYIS            346226.0     117.0    Thursday
+2    2025-04-17  New York  178.0  56.0   NYIS            346878.0     117.0    Thursday
+3    2025-04-17  New York  178.0  56.0   NYIS            345612.0     117.0    Thursday
+4    2025-04-17  New York  178.0  56.0   NYIS            345024.0     117.0    Thursday
+...         ...       ...    ...   ...    ...                 ...       ...         ...
+1295 2025-04-29   Seattle  150.0   NaN    SCL            -10453.0       NaN     Tuesday
+1296 2025-04-29   Seattle  150.0   NaN    SCL            -10555.0       NaN     Tuesday
+1297 2025-04-29   Seattle  150.0   NaN    SCL            -10555.0       NaN     Tuesday
+1298 2025-04-29   Seattle  150.0   NaN    SCL            -10463.0       NaN     Tuesday
+1299 2025-04-29   Seattle  150.0   NaN    SCL            -10453.0       NaN     Tuesday
+
+[1300 rows x 8 columns]
+2025-07-19 10:11:58,904 | INFO | check_missing | Missing values summary created.                    missing_count  missing_percent
+date                            0         0.000000
+city                            0         0.000000
+TMAX                            0         0.000000
+TMIN                          100         7.692308
+reg_id                          0         0.000000
+energy_consumption              0         0.000000
+avg_temp                      100         7.692308
+day_of_week                     0         0.000000
+2025-07-19 10:11:58,905 | INFO | check_outliers | Checking for temperature outliers...
+2025-07-19 10:11:58,907 | INFO | check_outliers | Temperature outliers checked.0       True
+1       True
+2       True
+3       True
+4       True
+        ... 
+1295    True
+1296    True
+1297    True
+1298    True
+1299    True
+Length: 1300, dtype: bool
+2025-07-19 10:11:58,909 | INFO | check_outliers | Checking for energy outliers...
+2025-07-19 10:11:58,910 | INFO | check_freshness | Checking data freshness...
+2025-07-19 10:11:58,918 | INFO | check_freshness | Data freshness checked. Most recent data is 81 days old.

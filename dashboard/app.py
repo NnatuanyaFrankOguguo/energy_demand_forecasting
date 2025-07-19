@@ -2,18 +2,17 @@
 import sys
 import os
 
-sys.path.insert(0, "C:/energy_demand_forecasting/")
-
+sys.path.insert(0, "C:/energy_demand_forecasting")
+# Ensure the loggerInfo module is accessible
+from ..loggerInfo import get_logger
 import streamlit as st
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
-from loggerInfo import get_logger
 from datetime import datetime, timedelta
 from quality.check_missing import check_missing_values
 from quality.check_outliers import check_temperature_outliers, check_energy_outliers
 from quality.check_freshness import check_data_freshness
-from sklearn.linear_model import LinearRegression
 import numpy as np
 
 
